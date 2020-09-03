@@ -19,3 +19,9 @@ npx grpc_tools_node_protoc \
   --ts_out=${PROTO_DEST} \
   -I ${PROTO_SRC} \
   ${PROTO_SRC}/*
+
+./protoc/bin/proto.exe
+  --plugin=./tootls/protoc-gen-grpc-web.exe
+  --grpc-web_out=import_style=commonjs,mode=grpcwebtext:${PROTO_DEST}} \
+  -I ${PROTO_SRC} \
+  ${PROTO_SRC}/*
