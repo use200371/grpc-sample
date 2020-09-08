@@ -19,7 +19,7 @@ class HelloService implements hello_grpc_pb.IGreeterServer
 
     const server = new grpc.Server();
     server.bind(
-        '0.0.0.0:50051',
+        '0.0.0.0:8080',
         grpc.ServerCredentials.createInsecure(),
     );
 

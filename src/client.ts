@@ -3,7 +3,7 @@ import * as hello_grpc_pb from './proto/helloworld_grpc_pb';
 import * as hello_pb from './proto/helloworld_pb';
 
 const client = new hello_grpc_pb.GreeterClient(
-    '127.0.0.1:50051',
+    '127.0.0.1:8080',
     grpc.credentials.createInsecure(),
 );
 
